@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilosLogin.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="shortcut icon" href="img/iconfinder_login_48697.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/iconfinder_Resume_Graduate_2316254.png" class="imagenGraduacion">
+            <span class="escuela">ReDa</span>
+        </div>
+
+        <div class="sistema">
+            Sistema para el Reporte de</br>Desempeño Académico
+        </div>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 align-items-center">
+                <div class="card text-center shadow-bottom-right" id="cardIniciarSesion">
+                    <img src="img/Instituto-Cultural-Tampico-.png" class="logoCultural">
+                    <div class="card-body text-center">
+                        <p class="my-2 sesionFont">Iniciar Sesión</p>
+                        <div class="form-cont">
+                            <form action="">
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="text" class="form-control col-12 col-md-10 validar" id="matricula" name="matricula"  required/>
+                                    <label for="matricula"><i class="fa fa-user-o iconos" aria-hidden="true"></i>Matricula</label>
+                                </div>
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="password" class="form-control col-12 col-md-10" id="contraseña" name="contraseña" required>
+                                    <label for="contraseña"><i class="fa fa-unlock-alt iconos" aria-hidden="true"></i>Contraseña</label>
+                                </div>
+                                <div class="form-group row my-2 justify-content-center mx-2">
+                                    <input type="submit" value="Ingresar" class="btn btn-iniciarSesion col-12 col-md-5">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-group row my-2 justify-content-center mx-2">
+                                <button type="button" class="btn btn-secondary col-12 col-md-5" id="btnMostrarRegistrarse">Registrarse</button>
+                        </div>
+                        <div class="my-1">
+                            <button type="button" class="btn btn-link" >Olvide mi contraseña</button>
+                        </div>
+                    </div>
+                </div><!-- aqui termina el inicio de sesion -->
+                <div class="card text-center shadow-bottom-right" id="cardRegistrarse">
+                    <img src="img/Instituto-Cultural-Tampico-.png" class="logoCultural">
+                    <div class="card-body">
+                        <p class="my-2 sesionFont text-center">Registrarse</p>
+                        <div class="form-cont">
+                            <form action="">
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="text" class="form-control col-12 col-md-10 validar" id="matricula" name="matricula"  required/>
+                                    <label for="matricula"><i class="fa fa-user-o iconos" aria-hidden="true"></i>Matricula</label>
+                                </div>
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="text" class="form-control col-12 col-md-10" id="nombreCompleto" name="nombreCompleto"  required/>
+                                    <label for="nombreCompleto">Nombre Completo</label>
+                                </div>
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="email" class="form-control col-12 col-md-10" id="correo" name="correo"  required/>
+                                    <label for="correo">Correo</label>
+                                    
+                                </div>
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="text" class="form-control col-12 col-md-5 mr-2 validar" id="telefono" name="telefono"  required/>
+                                    <label for="telefono">Telefono</label>
+                                    <select class="form-control col-12 col-md-5" id="rol">
+                                        <option>-- Seleccione un rol --</option>
+                                        <option>Profesor</option>
+                                        <option>Tutor</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row justify-content-center mx-2">
+                                    <select class="form-control col-12 col-md-10" id="campus">
+                                        <option>-- Seleccione el campus al que pertenece --</option>
+                                        <option>Campus I</option>
+                                        <option>Campus II</option>
+                                        <option>Campus III</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="password" class="form-control col-12 col-md-10" id="contraseña" name="contraseña" required>
+                                    <label for="contraseña">Contraseña</label>
+                                </div>
+                                <div class="form-group row justify-content-center mx-2">
+                                    <input type="password" class="form-control col-12 col-md-10" id="nvacontraseña" name="nvacontraseña" required>
+                                    <label for="nvacontraseña">Confirmar Contraseña</label>
+                                </div>
+                                <div class="form-group row my-2 justify-content-center mx-2">
+                                    <input type="submit" value="Registrarse" class="btn btn-iniciarSesion col-12 col-md-5">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-group row my-2 justify-content-center mx-2">
+                                <button type="button" class="btn btn-secondary col-12 col-md-5" id="btnMostrarInicioS">Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </div> <!-- Aqui termina la card de registrarse -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
