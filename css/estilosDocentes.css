@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Raleway', sans-serif;
-    background-color: #fff;
+    font-family: 'Raleway', sans-serif;    
 }
 header{
     background-color: #541111;
@@ -75,6 +74,7 @@ header{
 }
 /* navegacion */
 .navegacion{
+    overflow-y: scroll; 
     position: absolute;
     top: 30px;
     left: 0px;
@@ -132,7 +132,6 @@ header{
         display: block;
     }
     .navegacion{
-        left: -250px;
-        overflow: scroll;
+        left: -250px;        
     }
 }

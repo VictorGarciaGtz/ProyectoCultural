@@ -1,0 +1,78 @@
+:root{
+    --title-height: 40px;
+    --body-color: #f1f1f1;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+.contenido{        
+    overflow-y: scroll;    
+    margin-left: 250px;
+    position: absolute;
+}
+
+.fancy-scrollbar::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    display: none;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:active{
+    background-color: #999999;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-track:hover,
+.fancy-scrollbar::-webkit-scrollbar-track:active{
+    background: #d4d4d4;
+}
+
+.title-content{
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.title-triangle {    
+    width: 0;
+    height: 0;
+    border-left: 25px solid var(--body-color);
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;    
+    position: relative;
+    margin: 0 0 0 10px;
+}
+
+.title-triangle::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    top: -25px;
+    left: -35px;
+    background: var(--body-color);
+}
+.title-triangle::after{   
+    content: "";
+    position: absolute;
+    height: 0;   
+    width: 0px;
+    border-style: solid;
+    top:-25px;
+    left: -35px;
+    border-color: transparent transparent transparent var(--dark);
+    border-width: 25px 0 25px 25px;    
+    margin: 0 0 0 0;
+}
+
+.title-row{
+    position: absolute;
+    background:#c8d0d8;
+    width: 100%;
+    height: 50px;
+}

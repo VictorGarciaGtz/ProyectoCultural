@@ -1,6 +1,8 @@
 var bandera = false;
 
 $(document).ready(function(){
+    $('.contenido').css({'height':''+window.innerHeight-40});
+    $('.contenido').css({'width':''+window.innerWidth-250});
     $('.menu li:has(ul)').click(function(e){
         e.preventDefault(); /* desabilida todos los a  */
         if($(this).hasClass('activado')){
@@ -27,10 +29,17 @@ $(document).ready(function(){
     $(window).resize(function() {
         if (screen.width <= 768 && bandera!==true){
             $('.navegacion').css({'left': '-250px'});
+            $('.contenido').css({'margin-left': '0'});
+            $('.contenido').css({'width':''+window.innerWidth});
         }
         else if(screen.width > 768){
+            $('.contenido').css({'margin-left': '250px'});                    
             $('.navegacion').css({'left': '0'});
+            $('.contenido').css({'width':''+window.innerWidth-250});
         }
+
+        $('.contenido').css({'height':''+window.innerHeight-40});
+        
 
     });
 
