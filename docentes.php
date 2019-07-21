@@ -13,17 +13,22 @@
     <link rel="shortcut icon" href="img/iconfinder_user_1287507.ico">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span id="button-menu" class="fa fa-bars"></span>
-            <img src="img/iconfinder_Resume_Graduate_2316254.png" class="imagenGraduacion">
-            <span class="escuela">ReDa</span>
-        </div>
 
-        <!-- <button class="sistema btn btn-link">
-            Cerrar sesion
-        </button> -->
-        
+    <header id="header" class="header container-fluid">
+        <div class="container">        
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-6 text-center text-sm-left">
+                <div class="logo">
+                    <span id="button-menu" class="fa fa-bars"></span>
+                    <img src="img/iconfinder_Resume_Graduate_2316254.png" class="imagenGraduacion">                    
+                </div>
+                    <h1 class="my-1">ReDA</h1>
+                </div>            
+                <div class="col-12 col-sm-6 text-center text-sm-right">
+                    <button class="btn btn-light">Cerrar sesión</button>
+                </div>
+            </div>        
+        </div>        
     </header>
     <div class="-inline">
         
