@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --title-height: 40px;    
+    --red-base: #541111;
+    --light-body: #f1f1f1;
+    --dark-gray:#474545;
+    --medium-gray: #777777;
+    --light-gray: #c4c4c4;
+    --low-gray: #dddddd;
+    --blue-gray: #c8d0d8;
+    --asider-gray: #e6e6e6;
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+header img{
+    filter: invert(1);
+    height: 50px;
+    cursor: pointer;
+}
+
+.header{
+    background-color: #541111;
+    color:white;
+}
+
+div.sticky{
+    position: -webkit-sticky;
+    position: sticky;        
+    top:0;
+}
+
+.main{          
+    position: relative;
+    margin-left: 250px;        
+    z-index: -1;
+}
+
+.asider{
+    overflow-y: auto;
+    top:56px;
+    position: fixed;
+    background-color: var(--asider-gray);
+    width: 250px;
+    border-right: 8px solid var(--low-gray);
+    transition: left .3s;
+}
+
+.asider ul{
+    list-style: none;
+}
+
+.asider-head{
+    border-bottom: 8px solid var(--low-gray)
+}
+
+.fancy-scrollbar::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    display: none;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:active{
+    background-color: #999999;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-track:hover,
+.fancy-scrollbar::-webkit-scrollbar-track:active{
+    background: #d4d4d4;
+}
+
+.title-section{
+    position:relative;
+    background: var(--blue-gray);
+    height:50px;
+}
+
+.title-content{
+    position:relative;
+    width:250px;
+    height:50px;
+    background: var(--dark-gray);
+    color: white;
+}
+
+.title-content img{
+    width:50px;
+    height:50px;
+    filter: invert(100%);
+}
+
+.title-content::after{
+    content:"";
+}
+
+.title-triangle::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 0;
+    height: 0;
+    border-width: 25px;
+    border-style: solid;
+    border-color:  transparent transparent transparent var(--dark-gray);
+    background: transparent;
+    z-index:1;
+}
+
+.title-triangle-2{
+    width:260px;
+    height:50px;
+    background: var(--gray);
+    position: absolute;
+}
+
+.title-triangle-2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 260px;
+    width: 0;
+    height: 0;
+    border-width: 25px;
+    border-style: solid;
+    border-color:  transparent transparent transparent var(--gray);
+    background:;
+    z-index:0;
+}
+/* ============================================================================== */
+.imagenGraduacion{
+    width: 20px;
+    height: 25px;
+    -webkit-filter: invert(1) hue-rotate(180deg) contrast(2);
+    filter: invert(1) hue-rotate(180deg) contrast(2);
+    margin: 0 5px;  
+}
+
+.imagenDocente{
+    width: 150px;
+    height: 150px;
+}
+
+.fechaAbajo{
+    margin: 0 10px;
+}
+.subrayado::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #541111;
+    transition: width .3s;
+
+}
+.subrayado:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.asider ul{
+    width: 100%;
+    background: var(--asider-gray);
+    list-style: none;
+    top: 0;
+    padding: 10px;
+    margin: 0;    
+}
+
+.asider .menu li.title-menu{
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+}
+
+.asider .menu a{
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #c6d0da;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #541111;
+}
+
+.asider .menu ul{
+    display: none;
+}
+
+.asider .menu .activado > a{
+    background-color: #541111;
+    color: #fff;
+}
+
+/* ============================================================================== */
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-users:before {
+    content: "\f0c0";
+}
+
+.fa-caret-right:before {
+    content: "\f0da";
+}
+.fa-file-excel-o:before {
+    content: "\f1c3";
+}
+
+.fa-question-circle-o:before {
+    content: "\f29c";
+}
+
+.fa-angle-double-left:before {
+    content: "\f100";
+}
+
+.fa-angle-down:before {
+   content: "\f107";
+}
+
+.fa-check-square:before {
+    content: "\f14a";
+}
